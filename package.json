@@ -1,0 +1,21 @@
+{
+  "name": "comment-ui-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for comments ui app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js -e js,hbs,css"
+  },
+  "author": "emma",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "hbs": "^4.2.0"
+  }
+}
