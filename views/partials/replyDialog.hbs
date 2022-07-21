@@ -1,0 +1,16 @@
+<dialog class="modal" id="modal-{{this.id}}">
+    <form class="comment-form" id="form-{{this.id}}" action="/comments" method="post" autocomplete="off">
+        <a role="button" href="/" aria-label="See user profiles" class="profile-avatar-link">
+            <img src="{{user.profilePicUrl}}" alt="profile picture of {{user.name}}" id="img-{{this.id}}"
+                class="profile-avatar scale" />
+        </a>
+        <input type="text" name="content" class="comment-input" placeholder="Your reply..." autofocus required
+            oninvalid="this.setCustomValidity('Please enter your reply.')" oninput="this.setCustomValidity('')" />
+        <input type="hidden" id="id-input-{{this.id}}" name="id" value="{{user.id}}" />
+        <input type="hidden" name="parentId" value="{{this.id}}" />
+        <div class="comment-footer">
+            <button class="cancel-btn" type="button">Cancel</button>
+            <button id="reply-btn-{{this.id}}" class="reply-btn" type="submit">Post</button>
+        </div>
+    </form>
+</dialog>

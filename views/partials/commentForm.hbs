@@ -1,0 +1,11 @@
+<form class="comment-form" id="comment-form" action="/comments" method="post" autocomplete="off">
+  <a role="button" href="/" aria-label="See user profiles" class="profile-avatar-link">
+    <img src="{{user.profilePicUrl}}" alt="profile picture of {{user.name}}" class="profile-avatar scale" />
+  </a>
+  <input type="text" name="content" id="comment-input" class="comment-input" placeholder="What are your thoughts?"
+    autofocus required oninvalid="this.setCustomValidity('Please insert your comment.')"
+    oninput="this.setCustomValidity('')" />
+  <input type="hidden" name="id" id="comment-author-id" value="{{user.id}}" />
+  <input type="hidden" name="parentId" value="null" />
+  <button type="submit" class="primary-button">Comment</button>
+</form>

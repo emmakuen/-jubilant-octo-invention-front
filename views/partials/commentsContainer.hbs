@@ -1,0 +1,13 @@
+<div id="comments-container" class="comments-container">
+    {{#each comments}}
+
+    {{>comment}}
+
+    {{#if this.isParent }}
+    {{#each this.replies}}
+    {{>comment}}
+    {{/each}}
+    {{/if}}
+    {{>replyDialog}}
+    {{/each}}
+</div>
