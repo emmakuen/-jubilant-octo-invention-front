@@ -6,6 +6,7 @@ const hbs = require("hbs");
 const userRoutes = require("./routes/users");
 const commentRoutes = require("./routes/comments");
 const commentLikeRoutes = require("./routes/comment-likes");
+const notFoundRoute = require("./routes/not-found");
 
 const dateTimeHelpers = require("./helpers/datetime");
 const commentHelpers = require("./helpers/comment");
@@ -21,9 +22,11 @@ hbs.registerHelper("formatTimestamp", dateTimeHelpers.useRelativeTime);
 hbs.registerHelper("getParentId", commentHelpers.getParentId);
 
 app.use(express.static(path.join(__dirname, "./public")));
+
 app.use("/", userRoutes);
 app.use("/comments", commentRoutes);
 app.use("/like-comment", commentLikeRoutes);
+app.use("*", notFoundRoute);
 
 const PORT = process.env.PORT || 3000;
 
