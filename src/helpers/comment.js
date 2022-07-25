@@ -17,14 +17,12 @@ const populateComments = (comments, replies, userId) => {
 
 const populatePostedComment = (comment, user) => {
   comment.isLikedByUser = false;
-  comment.likeCount = 0;
   comment.likes = [];
   comment.author = user;
   return comment;
 };
 
 const populateUpvotedComment = (comment, userId) => {
-  comment.likeCount = comment.likes ? comment.likes.length : 0;
   comment.isLikedByUser =
     comment.likes && comment.likes.some((like) => like.userId === userId);
   return comment;
