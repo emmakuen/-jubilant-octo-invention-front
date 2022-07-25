@@ -1,0 +1,205 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CommentsList render list of comments correctly 1`] = `
+Array [
+  "Cameron Lawrence",
+  "Sophie Brecht",
+]
+`;
+
+exports[`CommentsList render list of comments correctly 2`] = `
+Array [
+  "James",
+]
+`;
+
+exports[`CommentsList render list of comments correctly 3`] = `
+<div
+  data-testid="comment-list"
+>
+  <div>
+    <div
+      class="css-zodmwq"
+    >
+      <div
+        class="css-5zthi9"
+      >
+        <a
+          aria-label="See user profiles"
+          href="/"
+          role="button"
+        >
+          <img
+            alt="Cameron Lawrence"
+            class="css-oovt6k"
+            src="https://randomuser.me/api/portraits/women/70.jpg"
+          />
+        </a>
+      </div>
+      <p
+        class="css-1wq22vh"
+      >
+        <a
+          aria-label="See user profiles"
+          href="/"
+          role="button"
+          tabindex="0"
+        >
+          <span
+            class="css-wpbqzu"
+            data-testid="author-name"
+          >
+            Cameron Lawrence
+          </span>
+        </a>
+        <span
+          class="css-1vkt2zm"
+        >
+          4 weeks ago
+        </span>
+      </p>
+      <p
+        class="css-v7n70w"
+      >
+        Love the native memberships and the zipless themes, I was just asked by a friend about options for a new site, and I think I know what I'll be recommending then...
+      </p>
+      <div
+        class="css-1jlz688"
+      >
+        <button
+          class="css-1f6sehp"
+        >
+          ▲ Upvote
+        </button>
+        <button
+          class="css-1f6sehp"
+        >
+          Reply
+        </button>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      class="css-m8nkj0"
+    >
+      <div
+        class="css-5zthi9"
+      >
+        <a
+          aria-label="See user profiles"
+          href="/"
+          role="button"
+        >
+          <img
+            alt="Sophie Brecht"
+            class="css-oovt6k"
+            src="https://randomuser.me/api/portraits/women/75.jpg"
+          />
+        </a>
+      </div>
+      <p
+        class="css-1wq22vh"
+      >
+        <a
+          aria-label="See user profiles"
+          href="/"
+          role="button"
+          tabindex="0"
+        >
+          <span
+            class="css-wpbqzu"
+            data-testid="author-name"
+          >
+            Sophie Brecht
+          </span>
+        </a>
+        <span
+          class="css-1vkt2zm"
+        >
+          One week ago
+        </span>
+      </p>
+      <p
+        class="css-v7n70w"
+      >
+        Switched our blog from Hubspot to Ghost a year ago -- turned out to be a great decision. Looking forward t othis update... The in-platform analytics look especially delicious. :)
+      </p>
+      <div
+        class="css-1jlz688"
+      >
+        <button
+          class="css-1f6sehp"
+        >
+          ▲ Upvote
+        </button>
+        <button
+          class="css-1f6sehp"
+        >
+          Reply
+        </button>
+      </div>
+    </div>
+    <div
+      class="css-h1ux1i"
+    >
+      <div
+        class="css-5zthi9"
+      >
+        <a
+          aria-label="See user profiles"
+          href="/"
+          role="button"
+        >
+          <img
+            alt="James"
+            class="css-oovt6k"
+            src="https://randomuser.me/api/portraits/men/74.jpg"
+          />
+        </a>
+      </div>
+      <p
+        class="css-1wq22vh"
+      >
+        <a
+          aria-label="See user profiles"
+          href="/"
+          role="button"
+          tabindex="0"
+        >
+          <span
+            class="css-wpbqzu"
+            data-testid="reply-author-name"
+          >
+            James
+          </span>
+        </a>
+        <span
+          class="css-1vkt2zm"
+        >
+          One week ago
+        </span>
+      </p>
+      <p
+        class="css-v7n70w"
+      >
+        Thanks Sophie! Last year has been an absolute goldrush for the creator economy. Slowly at first, then all at once. Will be interesting to see how this ecosystem evolves over the next few years.
+      </p>
+      <div
+        class="css-1jlz688"
+      >
+        <button
+          class="css-1f6sehp"
+        >
+          ▲ Upvote
+        </button>
+        <button
+          class="css-1f6sehp"
+        >
+          Reply
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
